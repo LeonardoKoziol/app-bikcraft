@@ -21,7 +21,7 @@
     <meta name="msapplication-tap-highlight" content="no">
 
     <!-- Your app title -->
-    <title>My App</title>
+    <title>Bikcraft</title>
 
     <link rel="stylesheet" href="framework7/css/framework7.min.css">
     <link rel="stylesheet" href="css/icons.css">
@@ -37,31 +37,31 @@
     <!-- Left panel with reveal effect when hidden -->
     <div class="panel panel-left panel-reveal">
       <div class="view view-left">
-        <div class="page">
+        <div class="page color-theme-yellow">
           <div class="navbar">
             <div class="navbar-inner sliding">
-              <div class="title">Left Panel</div>
+              <div class="title">Menu</div>
             </div>
           </div>
           <div class="page-content">
-            <div class="block-title">Left View Navigation</div>
+            
             <div class="list links-list">
-              <ul>
-                <li><a href="/left-page-1/">Left Page 1</a></li>
-                <li><a href="/left-page-2/">Left Page 2</a></li>
-              </ul>
+             
             </div>
-            <div class="block-title">Control Main View</div>
+            <!-- <div class="block-title">Control Main View</div> -->
             <div class="list links-list">
               <ul>
                 <li>
-                  <a href="/about/" data-view=".view-main" class="panel-close">About</a>
+                  <a href="#" class="button button-raised button-fill login-screen-open" data-login-screen="#my-login-screen">Login Screen</a>
                 </li>
                 <li>
-                  <a href="/form/" data-view=".view-main" class="panel-close">Form</a>
+                  <a href="" data-view=".view-main" class="panel-close">Portfólio</a>
                 </li>
                 <li>
-                  <a href="#" data-view=".view-main" class="back">Back in history</a>
+                  <a href="#" data-view=".view-main" class="back">Notificação</a>
+                </li>
+                <li>
+                  <a href="/form/" data-view=".view-main" class="back">Contato</a>
                 </li>
               </ul>
             </div>
@@ -70,7 +70,7 @@
       </div>
     </div>
     <!-- Right panel with cover effect -->
-    <div class="panel panel-right panel-cover theme-dark">
+    <!-- <div class="panel panel-right panel-cover theme-dark">
       <div class="view">
         <div class="page">
           <div class="navbar">
@@ -84,7 +84,7 @@
         </div>
       </div>
     </div>
-
+ -->
     <!-- Your main view, should have "view-main" class -->
     <div class="view view-main ios-edges">
       <!-- Page, data-name contains page name which can be used in callbacks -->
@@ -98,9 +98,9 @@
                 <i class="icon material-icons md-only">menu</i>
               </a>
             </div>
-            <div class="title sliding">My App</div>
+            <div class="title sliding">Bikcraft</div>
             <div class="right">
-              <a href="#" class="link icon-only panel-open" data-panel="right">
+              <a href="" class="link icon-only panel-open" data-panel="right">
                 <i class="icon f7-icons ios-only">menu</i>
                 <i class="icon material-icons md-only">menu</i>
               </a>
@@ -109,17 +109,18 @@
         </div>
         <!-- Toolbar-->
         <div class="toolbar">
-          <div class="toolbar-inner">
+          <!-- <div class="toolbar-inner">
             <a href="#" class="link">Left Link</a>
             <a href="#" class="link">Right Link</a>
-          </div>
+          </div> -->
         </div>
         <!-- Scrollable page content-->
         <div class="page-content">
           <div class="block block-strong">
-            <p>This is an example of split view application layout, commonly used on tablets. The main approach of such kind of layout is that you can see different views at the same time.</p>
+            <p>Bicicletas Feitas a Mão.</p>
 
-            <p>Each view may have different layout, different navbar type (dynamic, fixed or static) or without navbar.</p>
+            <p>"não tenha nada em sua casa que voce
+                não considere útil ou acredita ser bonito"</p>
 
             <p>The fun thing is that you can easily control one view from another without any line of JavaScript just using "data-view" attribute on links.</p>
           </div>
