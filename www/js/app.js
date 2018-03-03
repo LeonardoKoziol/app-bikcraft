@@ -1,5 +1,7 @@
 // Dom7
 var $$ = Dom7;
+$$('logoff').hide();
+$$('.login-screen-open').show();
 
 // Framework7 App main instance
 var app  = new Framework7({
@@ -41,13 +43,61 @@ var mainView = app.views.create('.view-main', {
 });
 
 // Login Screen Demo
-$$('#my-login-screen .login-button').on('click', function () {
-  var username = $$('#my-login-screen [name="username"]').val();
+$$('#my-login-screen .SignUp').on('click', function () {
+  var username = $$('#my-login-screen [name="email"]').val();
   var password = $$('#my-login-screen [name="password"]').val();
 
-  // Close login screen
-  app.loginScreen.close('#my-login-screen');
-
+      
+  
   // Alert username and password
   app.dialog.alert('Username: ' + username + '<br>Password: ' + password);
+
+
+    firebase
+    .auth()
+    .createUserWithEmailAndPassword(username,password) //Promisses
+    .then( function () {
+      app.dialog.alert('Bem Vindo: ' + username);
+      this.$$('.toolbar-inner').text('Bem Vindo: '+ username);
+
+    })
+    .catch( function(error){
+      console.error(error.code)
+      console.error(error.message)
+      app.dialog.alert('Falha ao cadastrar, se fudeu');
+      // this.$$('.toolbar-inner').innerHtml = 'Bem Vindo:' + username;
+    })
+
+    app.loginScreen.close('#my-login-screen');
+
+
+    // Login Screen Demo
+$$('#my-login-screen .SignIn').on('click', function () {
+  var username = $$('#my-login-screen [name="email"]').val();
+  var password = $$('#my-login-screen [name="password"]').val();
+
+      
+  
+  // Alert username and password
+  app.dialog.alert('Username: ' + username + '<br>Password: ' + password);
+
+
+    firebase
+    .auth()
+    .signInWithEmailAndPassword(username,password) //Promisses
+    .then( function () {
+      app.dialog.alert('Bem Vindo: ' + username);
+      this.$$('.toolbar-inner').text('Bem Vindo: '+ username);
+
+    })
+    .catch( function(error){
+      console.error(error.code)
+      console.error(error.message)
+      app.dialog.alert('Falha ao cadastrar, se fudeu');
+      // this.$$('.toolbar-inner').innerHtml = 'Bem Vindo:' + username;
+    })
+
+    app.loginScreen.close('#my-login-screen')
+  });
+
 });

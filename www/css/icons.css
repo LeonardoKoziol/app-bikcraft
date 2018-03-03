@@ -68,3 +68,69 @@
   font-feature-settings: "liga";
   text-align: center;
 }
+
+img.demo-lazy {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.demo-swiper .swiper-slide {
+  font-size: 25px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  color: #000;
+}
+.demo-swiper .swiper-slide {
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+.demo-swiper {
+  margin: 0px 0 35px;
+  font-size: 18px;
+  height: 120px;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide {
+  width: 85%;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide:nth-child(2n) {
+  width: 70%;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide:nth-child(3n) {
+  width: 30%;
+}
+.subtitulo{
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  color:#000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom:40px;
+  
+}
+.subtitulo:after{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000;
+  margin: 8px auto;
+}
+
+.subtitulo-interno:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 8px 0;
+}
+.indexmeio p{
+  text-align: center;
+}
