@@ -71,33 +71,5 @@ $$('#my-login-screen .SignUp').on('click', function () {
     app.loginScreen.close('#my-login-screen');
 
 
-    // Login Screen Demo
-$$('#my-login-screen .SignIn').on('click', function () {
-  var username = $$('#my-login-screen [name="email"]').val();
-  var password = $$('#my-login-screen [name="password"]').val();
-
-      
-  
-  // Alert username and password
-  app.dialog.alert('Username: ' + username + '<br>Password: ' + password);
-
-
-    firebase
-    .auth()
-    .signInWithEmailAndPassword(username,password) //Promisses
-    .then( function () {
-      app.dialog.alert('Bem Vindo: ' + username);
-      this.$$('.toolbar-inner').text('Bem Vindo: '+ username);
-
-    })
-    .catch( function(error){
-      console.error(error.code)
-      console.error(error.message)
-      app.dialog.alert('Falha ao cadastrar, se fudeu');
-      // this.$$('.toolbar-inner').innerHtml = 'Bem Vindo:' + username;
-    })
-
-    app.loginScreen.close('#my-login-screen')
-  });
 
 });
