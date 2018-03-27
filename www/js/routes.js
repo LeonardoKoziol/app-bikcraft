@@ -3,6 +3,10 @@ routes = [
     path: '/',
     url: './index.html',
   },
+    {
+    path: '/inserir/',
+    url: './inserir_firebase.html',
+  },
   {
     path: '/portfolio/',
     url: './portfolio.html',
