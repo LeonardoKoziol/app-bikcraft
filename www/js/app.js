@@ -102,10 +102,6 @@ $$('#my-login-screen .SignIn').on('click', function () {
 });
 
 
-
-
-
-
 $$('#my-login-screen .Logoff').on('click', function () {
   app.loginScreen.close('#my-login-screen');
     $$('input#email').val('');

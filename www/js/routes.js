@@ -9,7 +9,7 @@ routes = [
   },
   {
     path: '/portfoliodb/',
-    url: './portfolio.html',
+    url: './pages/portfoliodb.html',
   },
   {
     path: '/sobre/',
@@ -29,8 +29,12 @@ routes = [
     url: './pages/left-page-2.html',
   },
     {
-    path: '/estoque/',
-    url: './estoque.html',
+    path: '/portfolio/',
+    url: './portfolio.html',
+  },
+  {
+    path: '/adm/',
+    url: './adm.html',
   },
   // Page Loaders & Router
   {
