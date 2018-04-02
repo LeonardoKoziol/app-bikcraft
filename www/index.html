@@ -47,21 +47,23 @@
                   <a href="#" class="button button-raised button-fill login-screen-open" data-login-screen="#my-login-screen">Login Screen</a>
                 </li>
                 <li>
-                  <a href="/portfolio/" data-view=".view-main" class="back">Portfólio</a>
+                  <a href="/portfoliodb/" data-view=".view-main" class="panel-close">Portfólio</a>
                 </li>
+               
                 <li>
-                  <a href="#" data-view=".view-main" class="back">Notificação</a>
-                </li>
-                <li>
-                  <a href="/form/" data-view=".view-main" class="back">Contato</a>
+                  <a href="#" data-popup=".form-firebase" class="popup-open">Orçamento</a>
                 </li>
                 <li>
                   <a href="/sobre/" data-view=".view-main" class="back">Sobre</a>
                 </li>
-                 <li>
-                  <a href="/inserir/" data-view=".view-main" class="back">Inserir</a>
+                <li>
+                  <a href="/portfolio/" data-view=".view-main" class="back">Estoque</a>
                 </li>
-              </ul>
+                <li>
+                  <a href="#" class="logoff">Logoff</a>                        
+                </li>
+                  </ul>
+
             </div>
           </div>
         </div>
@@ -98,10 +100,6 @@
             </div>
             <div class="title sliding">FazFesta</div>
             <div class="right">
-              <a href="" class="link icon-only panel-open" data-panel="right">
-                <i class="icon f7-icons ios-only">menu</i>
-                <i class="icon material-icons md-only">menu</i>
-              </a>
             </div>
           </div>
         </div>
@@ -113,34 +111,29 @@
           </div>
         </div> -->
         <!-- Scrollable page content-->
+        <div class="toolbar color-theme-black">
+          <div class="toolbar-inner">
+            Nome do cara logado
+          </div>
+        </div>
         <div class="page-content ">
            <div class="block block-strong indexmeio">
-            <p> <img data-src="imgfz/fz7.jpg" width="1500" height="1500" class="lazy lazy-fade-in demo-lazy"/></p>
-            <p class="">Bem Vindo ao APP Bikcraft.</p>
+            <p> <img data-src="imgfz/fz10.jpg" width="1500" height="1500" class="lazy lazy-fade-in demo-lazy"/></p>
+            <p class="">Bem Vindo a Fazfesta.</p>
             
          
           
-            <p>Bicicletas Feitas a Mão.</p>
+            <p>Os movéis mais bonitos para sua festa !.</p>
 
-            <p>"não tenha nada em sua casa que voce
-                não considere útil ou acredita ser bonito"</p>
+            <p>"A FazFesta Locadora de Móveis para Eventos trabalha com o que há de mais bonito e moderno no mercado"</p>
           
         </div> 
           
-        <h1>Produtos</h1>
+        
 
-       <div class="swiper-container swiper-init demo-swiper">
-    <div class="swiper-wrapper">
-    <div class="swiper-slide"><img src="imgfz/fz1.jpg" alt=""></div>
-    <div class="swiper-slide"><img src="imgfz/fz2.jpg" alt=""></div>
-    <div class="swiper-slide"><img src="imgfz/fz3.jpg" alt=""></div>
-    <div class="swiper-slide"><img src="imgfz/fz4.jpg" alt=""></div>
-    <div class="swiper-slide"><img src="imgfz/fz5.jpg" alt=""></div>
-    <div class="swiper-slide"><img src="imgfz/fz6.jpg" alt=""></div>
-    </div>
-    </div>
+   
 
-        <h1>Portfolio</h1>
+       
          
     <div class="block block-strong ">
               <div class="row ">
@@ -155,7 +148,9 @@
               <div class="row ">
               <div class="indexmeio">
                 <p class="subtitulo">Entre em contato e faça um orçamento.</p>
-                <a href="/form/" class="button button-raised button-fill">Contato</a>
+               
+            <a href="#" data-popup=".form-firebase" class="popup-open button button-raised button-fill">Orçamento</a>
+                
             </div>
              </div>
           </div>
@@ -219,6 +214,9 @@
     <div class="login-screen" id="my-login-screen">
       <div class="view">
         <div class="page">
+           <div class="right">
+                    <a href="#" class="login-screen-close">Close</a>
+                  </div>
           <div class="page-content login-screen-content">
             <div class="login-screen-title">Login</div>
             <div class="list">
@@ -259,7 +257,89 @@
         </div>
       </div>
     </div>
-  </div>
+
+    <div class="popup form-firebase">
+  <div class="view">
+  <div class="page color-theme-black">
+    <div class="navbar">
+      <div class="navbar-inner sliding">
+        <div class="left">
+
+         
+                 
+          <a href="/index/" class="link back ">
+            <i class="icon icon-back"></i>
+            <span class="ios-only ">Voltar</span>
+          </a>
+        </div>
+        <div class="title">Orçamento</div>
+      </div>
+    </div>
+    
+    <div class="page-content">
+      
+        <h1>Solicite aqui seu orçamento</h1>
+  
+      <div class="block-title"></div>
+      <div class="list no-hairlines-md">
+        <ul>
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Nome</div>
+                <div class="item-input-wrap">
+                  <input type="text" id="nome" placeholder="Seu nome"/>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">E-mail</div>
+                <div class="item-input-wrap">
+                  <input type="email" id="emailorcamento" placeholder="E-mail"/>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Telefone</div>
+                <div class="item-input-wrap">
+                  <input type="tel" id="telefone" placeholder="Telefone"/>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="align-top">
+            <div class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Mensagem</div>
+                <div class="item-input-wrap">
+                  <textarea id="mensagem" placeholder="Digite aqui sua mensagem"></textarea>
+                </div>
+              </div>
+            </div>
+          </li>
+        <p class="row">
+          <!-- <button id="addButton" class="button button-big button-fill button-raised">Enviar</button> -->
+          <!-- <input type="button" id="addButton" value="Enviar" class="button button-big button-fill button-raised"> -->
+          <a href="#" id="addButton" class="col button button-big button-fill button-raised addButton">Enviar</a>
+        </p>
+      </div>
+      </li>
+      </ul>
+      </div>
+      </div>
+      </div>
+      </div>
+              </div>
+  
+  
+            </div>
+      </div>
   
 
 
@@ -274,6 +354,7 @@
     <script src="js/firebase.js"></script>
     <script src="js/firebaseapp.js"></script>
     <script src="js/app.js"></script>
+    <script scr="js/portfolio.js"></script>
     <
     <!-- <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
     <script type="text/javascript" src="js/my-app.js"></script> -->

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="br.com.fernandojsilva.bikcraft" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Bickraft</name>
+    <description>
+        Loja virtual de bikes
+    </description>
+    <author email="fernando.jsilva.senac@gmail.com" href="http://jsfernando.com">Fernando JSilva
+    </author>
+    <icon src="icon.png" gap:role="default"></icon> <!-- 128x128 -->
+    <gap:splash src="splash.png"></gap:splash> <!-- 720x1280 -->
+    <content src="index.html" />
+    <access origin="*" />
+</widget>

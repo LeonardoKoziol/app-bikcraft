@@ -1,10 +1,10 @@
-// Initialize Firebase
- var config = {
-    apiKey: "AIzaSyAuoYHgdz8SB1JQca4oiJHdpnTXt4E7vAM",
-    authDomain: "bikcraft-dd927.firebaseapp.com",
-    databaseURL: "https://bikcraft-dd927.firebaseio.com",
-    projectId: "bikcraft-dd927",
-    storageBucket: "bikcraft-dd927.appspot.com",
-    messagingSenderId: "1071859559996"
+ // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAHFQYF3QV4KYhvZkTnNKmnXCkB7YEBpoQ",
+    authDomain: "fazfesta-c56c9.firebaseapp.com",
+    databaseURL: "https://fazfesta-c56c9.firebaseio.com",
+    projectId: "fazfesta-c56c9",
+    storageBucket: "fazfesta-c56c9.appspot.com",
+    messagingSenderId: "151147608818"
   };
   firebase.initializeApp(config);
